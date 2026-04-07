@@ -6,7 +6,12 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="format-detection" content="telephone=no">
-  <title>MP Pilot</title>
+  <meta name="description" content="MP Pilot — SaaS для продавцов Wildberries и Ozon: массовое редактирование карточек, добавление новых товаров и контроль расходов в одном окне.">
+  <meta property="og:title" content="MP Pilot">
+  <meta property="og:description" content="SaaS для продавцов Wildberries и Ozon: массовое редактирование карточек, новые артикулы и контроль расходов.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#16318f">
+  <title>MP Pilot — SaaS для Wildberries и Ozon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,15 +23,16 @@
 
   <div class="page-shell">
     <header class="topbar">
-      <a class="brand" href="#">
+      <a class="brand" href="#hero">
         <span class="brand-mark">MP</span>
         <span class="brand-name">MP Pilot</span>
       </a>
 
       <nav class="nav">
         <a href="#features">Возможности</a>
-        <a href="#how">Как работает</a>
+        <a href="#workflow">Как работает</a>
         <a href="#benefits">Преимущества</a>
+        <a href="#pricing">Тарифы</a>
         <a href="#reviews">Отзывы</a>
       </nav>
 
@@ -34,7 +40,7 @@
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero-copy">
           <h1>Платформа для продавцов на маркетплейсах, где каталог и расходы работают в твою пользу</h1>
           <p class="hero-text">
@@ -44,7 +50,7 @@
 
           <div class="hero-actions">
             <a class="button" href="#cta">Начать бесплатно</a>
-            <a class="button button-light" href="#how">Смотреть демо</a>
+            <a class="button button-light" href="#workflow">Смотреть демо</a>
           </div>
         </div>
 
@@ -52,11 +58,11 @@
           <div class="dashboard">
             <aside class="sidebar">
               <div class="sidebar-brand">MP Pilot</div>
-              <a class="sidebar-link active" href="#">Главная</a>
-              <a class="sidebar-link" href="#">Карточки</a>
-              <a class="sidebar-link" href="#">Расходы</a>
-              <a class="sidebar-link" href="#">Аналитика</a>
-              <a class="sidebar-link" href="#">Интеграции</a>
+              <a class="sidebar-link active" href="#hero">Главная</a>
+              <a class="sidebar-link" href="#features">Карточки</a>
+              <a class="sidebar-link" href="#benefits">Расходы</a>
+              <a class="sidebar-link" href="#reviews">Аналитика</a>
+              <a class="sidebar-link" href="#pricing">Интеграции</a>
             </aside>
 
             <div class="dashboard-main">
@@ -163,7 +169,7 @@
         </div>
       </section>
 
-      <section class="problem-section" id="how">
+      <section class="problem-section" id="workflow">
         <div class="section-copy">
           <h2>Продажи растут. Почему управлять каталогом становится сложнее?</h2>
           <p>Когда товаров и операций становится больше, ручная работа замедляет команду и съедает маржу.</p>
@@ -253,14 +259,83 @@
         </div>
       </section>
 
+      <section class="pricing-section" id="pricing">
+        <div class="section-copy centered">
+          <h2>Простой старт без лишней сложности</h2>
+          <p>Выбери формат подключения, который подходит под размер каталога и нагрузку команды.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <span class="pricing-tag">Старт</span>
+            <strong>Для небольшого каталога</strong>
+            <p>Базовое управление карточками, новые товары и контроль расходов.</p>
+            <ul>
+              <li>До 1 000 SKU</li>
+              <li>Массовые обновления</li>
+              <li>Базовая аналитика</li>
+            </ul>
+          </article>
+
+          <article class="pricing-card featured">
+            <span class="pricing-tag">Команда</span>
+            <strong>Для растущих селлеров</strong>
+            <p>Полный набор для работы с большим каталогом и несколькими маркетплейсами.</p>
+            <ul>
+              <li>До 20 000 SKU</li>
+              <li>Каталог и расходы</li>
+              <li>Приоритетная поддержка</li>
+            </ul>
+          </article>
+
+          <article class="pricing-card">
+            <span class="pricing-tag">Про</span>
+            <strong>Для агентств и брендов</strong>
+            <p>Расширенная настройка процессов, интеграции и индивидуальное внедрение.</p>
+            <ul>
+              <li>Без лимита по SKU</li>
+              <li>Интеграции под процесс</li>
+              <li>Кастомный онбординг</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
       <section class="cta-section" id="cta">
-        <div>
+        <div class="cta-copy">
           <h2>Подключите каталог и посмотрите, где можно ускорить работу уже в первую неделю</h2>
           <p>Быстрый старт для Wildberries и Ozon без тяжёлого внедрения.</p>
         </div>
-        <a class="button" href="mailto:demo@mppilot.ru">Запросить демо</a>
+        <form class="cta-form" id="lead-form">
+          <input type="text" name="name" placeholder="Имя" aria-label="Имя">
+          <input type="email" name="email" placeholder="Email" aria-label="Email">
+          <button class="button" type="submit">Запросить демо</button>
+        </form>
       </section>
     </main>
   </div>
+
+  <div class="toast" id="lead-toast" aria-live="polite">Спасибо. Мы откроем письмо в вашем почтовом клиенте.</div>
+
+  <script>
+    const form = document.getElementById('lead-form');
+    const toast = document.getElementById('lead-toast');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const data = new FormData(form);
+      const name = (data.get('name') || '').toString().trim() || 'Пользователь';
+      const email = (data.get('email') || '').toString().trim() || 'не указан';
+
+      const subject = encodeURIComponent('Запрос демо MP Pilot');
+      const body = encodeURIComponent(`Имя: ${name}\nEmail: ${email}\n\nИнтересует демо MP Pilot для Wildberries и Ozon.`);
+
+      toast.classList.add('is-visible');
+      window.location.href = `mailto:demo@mppilot.ru?subject=${subject}&body=${body}`;
+
+      setTimeout(() => toast.classList.remove('is-visible'), 3500);
+    });
+  </script>
 </body>
 </html>
