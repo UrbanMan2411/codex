@@ -86,6 +86,12 @@ button {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.06);
   color: #d3daf6;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.tab:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .tab.is-active {
@@ -196,6 +202,13 @@ button {
   background: rgba(255, 255, 255, 0.08);
   color: #eef2ff;
   border: 1px solid var(--line);
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+
+.ghost-btn:hover,
+.icon-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .hero-card,
@@ -215,6 +228,11 @@ button {
   padding: 18px;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(95, 116, 255, 0.3), rgba(255, 102, 196, 0.16));
+  transition: transform 180ms ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-2px);
 }
 
 .hero-card strong,
@@ -261,6 +279,15 @@ button {
   margin-top: 14px;
   padding: 16px;
   border-radius: 24px;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.panel:hover,
+.list-card:hover,
+.primary-card:hover,
+.upload-card:hover,
+.expense-list:hover {
+  transform: translateY(-2px);
 }
 
 .panel h3 {
@@ -316,10 +343,28 @@ button {
   background: linear-gradient(180deg, var(--blue), #3a53f6);
   color: #fff;
   font-weight: 700;
+  position: relative;
+  overflow: hidden;
+  transition: transform 160ms ease, box-shadow 160ms ease, filter 160ms ease;
 }
 
 .action-btn {
   flex: 1 1 calc(50% - 5px);
+}
+
+.action-btn::after,
+.primary-wide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.24) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 500ms ease;
+}
+
+.action-btn:hover::after,
+.primary-wide:hover::after {
+  transform: translateX(120%);
 }
 
 .tabbar {
@@ -431,6 +476,45 @@ button {
 
 .upload-drop small {
   color: var(--muted);
+}
+
+.screen-active .hero-card,
+.screen-active .panel,
+.screen-active .primary-card,
+.screen-active .upload-card,
+.screen-active .expense-list,
+.screen-active .list-card {
+  animation: rise 420ms ease both;
+}
+
+.screen-active .metrics .metric:nth-child(2),
+.screen-active .metrics .metric:nth-child(4) {
+  animation-delay: 70ms;
+}
+
+.screen-active .metrics .metric:nth-child(3),
+.screen-active .panel {
+  animation-delay: 120ms;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 .upload-steps {
