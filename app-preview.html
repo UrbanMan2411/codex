@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>MP Pilot App Preview</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app-preview.css">
+</head>
+<body>
+  <div class="preview-shell">
+    <section class="intro">
+      <span class="eyebrow">iOS App Concept</span>
+      <h1>Как может выглядеть мобильное приложение MP Pilot</h1>
+      <p>Быстрый концепт под iPhone: контроль расходов, массовые операции и запуск новых артикулов для Wildberries и Ozon.</p>
+
+      <div class="screen-tabs">
+        <button class="tab is-active" data-screen="dashboard">Главная</button>
+        <button class="tab" data-screen="catalog">Карточки</button>
+        <button class="tab" data-screen="expenses">Расходы</button>
+        <button class="tab" data-screen="upload">Новый товар</button>
+      </div>
+    </section>
+
+    <section class="phone-stage">
+      <div class="phone">
+        <div class="dynamic-island"></div>
+
+        <div class="screen screen-active" data-screen="dashboard">
+          <div class="statusbar">
+            <span>9:41</span>
+            <span>5G 100%</span>
+          </div>
+
+          <div class="app-header">
+            <div>
+              <small>MP Pilot</small>
+              <h2>Доброе утро, Данил</h2>
+            </div>
+            <button class="ghost-btn">WB + Ozon</button>
+          </div>
+
+          <article class="hero-card">
+            <small>Экономика недели</small>
+            <strong>1.84 млн ₽</strong>
+            <p>Расходы снижены на 12% после оптимизации логистики и массового обновления карточек.</p>
+          </article>
+
+          <div class="metrics">
+            <article class="metric">
+              <span>SKU</span>
+              <strong>12 480</strong>
+            </article>
+            <article class="metric">
+              <span>Изменения</span>
+              <strong>2 340</strong>
+            </article>
+            <article class="metric">
+              <span>Ошибки</span>
+              <strong>23</strong>
+            </article>
+            <article class="metric">
+              <span>Новые</span>
+              <strong>186</strong>
+            </article>
+          </div>
+
+          <article class="panel">
+            <div class="panel-top">
+              <h3>Пульс каталога</h3>
+              <span>Сегодня</span>
+            </div>
+            <div class="sparkline">
+              <span class="point p1"></span>
+              <span class="point p2"></span>
+              <span class="point p3"></span>
+              <span class="point p4"></span>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-top">
+              <h3>Быстрые действия</h3>
+            </div>
+            <div class="actions-grid">
+              <button class="action-btn">Массово изменить</button>
+              <button class="action-btn">Добавить товары</button>
+              <button class="action-btn">Скачать отчёт</button>
+              <button class="action-btn">Найти перерасход</button>
+            </div>
+          </article>
+
+          <nav class="tabbar">
+            <span class="active">Главная</span>
+            <span>Карточки</span>
+            <span>Расходы</span>
+            <span>Ещё</span>
+          </nav>
+        </div>
+
+        <div class="screen" data-screen="catalog">
+          <div class="statusbar">
+            <span>9:41</span>
+            <span>5G 100%</span>
+          </div>
+
+          <div class="app-header">
+            <div>
+              <small>Каталог</small>
+              <h2>Массовое редактирование</h2>
+            </div>
+            <button class="icon-btn">Фильтр</button>
+          </div>
+
+          <article class="filter-card">
+            <span class="chip active-chip">Одежда</span>
+            <span class="chip">Дом</span>
+            <span class="chip">Косметика</span>
+          </article>
+
+          <article class="list-card">
+            <div class="row">
+              <div>
+                <strong>Футболка Basic</strong>
+                <small>SEO, описание, атрибуты</small>
+              </div>
+              <span class="badge success">Готово</span>
+            </div>
+            <div class="row">
+              <div>
+                <strong>Худи Winter</strong>
+                <small>Цена, медиа, остатки</small>
+              </div>
+              <span class="badge progress">В работе</span>
+            </div>
+            <div class="row">
+              <div>
+                <strong>Куртка City</strong>
+                <small>Габариты, описание</small>
+              </div>
+              <span class="badge success">Готово</span>
+            </div>
+          </article>
+
+          <article class="primary-card">
+            <small>Выбрано</small>
+            <strong>1 248 карточек</strong>
+            <p>Применить шаблон изменений сразу к выбранной группе товаров.</p>
+            <button class="primary-wide">Запустить обновление</button>
+          </article>
+
+          <nav class="tabbar">
+            <span>Главная</span>
+            <span class="active">Карточки</span>
+            <span>Расходы</span>
+            <span>Ещё</span>
+          </nav>
+        </div>
+
+        <div class="screen" data-screen="expenses">
+          <div class="statusbar">
+            <span>9:41</span>
+            <span>5G 100%</span>
+          </div>
+
+          <div class="app-header">
+            <div>
+              <small>Финансы</small>
+              <h2>Контроль расходов</h2>
+            </div>
+            <button class="ghost-btn">7 дней</button>
+          </div>
+
+          <article class="hero-card alt">
+            <small>Потенциал экономии</small>
+            <strong>217 000 ₽</strong>
+            <p>Основной перерасход сейчас в логистике, хранении и неэффективных SKU.</p>
+          </article>
+
+          <article class="expense-list">
+            <div class="expense-row">
+              <div>
+                <strong>Логистика</strong>
+                <small>38% от расходов</small>
+              </div>
+              <b>702 000 ₽</b>
+            </div>
+            <div class="expense-row">
+              <div>
+                <strong>Хранение</strong>
+                <small>24% от расходов</small>
+              </div>
+              <b>442 000 ₽</b>
+            </div>
+            <div class="expense-row">
+              <div>
+                <strong>Реклама</strong>
+                <small>19% от расходов</small>
+              </div>
+              <b>350 000 ₽</b>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-top">
+              <h3>Рекомендации</h3>
+            </div>
+            <ul class="recommendations">
+              <li>Сократить поставки по 34 SKU с низкой оборачиваемостью</li>
+              <li>Обновить карточки у товаров с высокой рекламной стоимостью</li>
+              <li>Пересмотреть логистику для крупных позиций</li>
+            </ul>
+          </article>
+
+          <nav class="tabbar">
+            <span>Главная</span>
+            <span>Карточки</span>
+            <span class="active">Расходы</span>
+            <span>Ещё</span>
+          </nav>
+        </div>
+
+        <div class="screen" data-screen="upload">
+          <div class="statusbar">
+            <span>9:41</span>
+            <span>5G 100%</span>
+          </div>
+
+          <div class="app-header">
+            <div>
+              <small>Новый товар</small>
+              <h2>Быстрый запуск SKU</h2>
+            </div>
+            <button class="icon-btn">Шаблон</button>
+          </div>
+
+          <article class="upload-card">
+            <div class="upload-drop">
+              <strong>Перетащи XLSX или CSV</strong>
+              <small>или выбери шаблон для Wildberries / Ozon</small>
+            </div>
+            <div class="upload-steps">
+              <div class="step done">1. Файл загружен</div>
+              <div class="step done">2. Поля сопоставлены</div>
+              <div class="step current">3. Проверка ошибок</div>
+              <div class="step">4. Публикация</div>
+            </div>
+          </article>
+
+          <article class="list-card">
+            <div class="row">
+              <div>
+                <strong>186 товаров готовы</strong>
+                <small>Проверка прошла успешно</small>
+              </div>
+              <span class="badge success">97%</span>
+            </div>
+            <div class="row">
+              <div>
+                <strong>6 товаров требуют правки</strong>
+                <small>Отсутствуют размеры или фото</small>
+              </div>
+              <span class="badge progress">Fix</span>
+            </div>
+          </article>
+
+          <button class="primary-wide fixed-bottom">Опубликовать товары</button>
+
+          <nav class="tabbar">
+            <span>Главная</span>
+            <span>Карточки</span>
+            <span>Расходы</span>
+            <span class="active">Ещё</span>
+          </nav>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const tabs = document.querySelectorAll('.tab');
+    const screens = document.querySelectorAll('.screen');
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const next = tab.dataset.screen;
+
+        tabs.forEach((item) => item.classList.toggle('is-active', item === tab));
+        screens.forEach((screen) => {
+          screen.classList.toggle('screen-active', screen.dataset.screen === next);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
